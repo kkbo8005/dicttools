@@ -6,17 +6,16 @@ import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
-import javax.swing.*;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class HelloController {
-    @FXML
-    private Label welcomeText;
+
     @FXML
     private TextField birthday;
 
@@ -47,9 +46,6 @@ public class HelloController {
     private TextField qq;
 
     @FXML
-    private VBox gz4;
-
-    @FXML
     private VBox gz3;
 
     @FXML
@@ -71,8 +67,6 @@ public class HelloController {
     @FXML
     private TextField phone;
 
-    @FXML
-    private CheckBox FistA;
 
     @FXML
     private TextField idcard;
@@ -96,10 +90,9 @@ public class HelloController {
     @FXML
     private Label status;
 
-    private List<String> str1 = new ArrayList<>();
-    private List<String> str2 = new ArrayList<>();
-    private List<String> str3 = new ArrayList<>();
-    private List<String> str4 = new ArrayList<>();
+    private final List<String> str1 = new ArrayList<>();
+    private final List<String> str2 = new ArrayList<>();
+    private final List<String> str3 = new ArrayList<>();
 
     private  void GetSelectValue(VBox box,List<String> strlist)
     {
@@ -363,24 +356,16 @@ public class HelloController {
                 strlist.add(systemName.getText());
                 break;
             case "连接符":
-                for (String s : Linkkey.getText().split("\n")) {
-                    strlist.add(s);
-                }
+                Collections.addAll(strlist, Linkkey.getText().split("\n"));
                 break;
             case "年份":
-                for (String s : year.getText().split("\n")) {
-                    strlist.add(s);
-                }
+                Collections.addAll(strlist, year.getText().split("\n"));
                 break;
             case "常用词组":
-                for (String s : Commonphrases.getText().split("\n")) {
-                    strlist.add(s);
-                }
+                Collections.addAll(strlist, Commonphrases.getText().split("\n"));
                 break;
             case "曾用账号":
-                for (String s : oldAccount.getText().split("\n")) {
-                    strlist.add(s);
-                }
+                Collections.addAll(strlist, oldAccount.getText().split("\n"));
                 break;
             default:
                 break;
