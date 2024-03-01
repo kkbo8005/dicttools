@@ -4,6 +4,8 @@ target/
 !**/src/test/**/target/
 
 ### IntelliJ IDEA ###
+.idea
+./mvn
 .idea/modules.xml
 .idea/jarRepositories.xml
 .idea/compiler.xml
