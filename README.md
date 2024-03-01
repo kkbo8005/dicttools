@@ -20,3 +20,4 @@
 java -jar dicttools-1.0-SNAPSHOT.jar 
 ```
 
+![image-20240301115142432](README.assets/image-20240301115142432.png)
