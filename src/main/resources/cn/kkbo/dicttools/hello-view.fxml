@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane prefHeight="895.0" prefWidth="1039.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.kkbo.dicttools.HelloController">
+   <children>
+      <TextField fx:id="UserName" layoutX="104.0" layoutY="26.0" />
+      <TextArea fx:id="dictlist" editable="false" layoutX="24.0" layoutY="640.0" prefHeight="241.0" prefWidth="992.0" snapToPixel="false" wrapText="true" />
+      <Label layoutX="33.0" layoutY="31.0" text="姓（英文）" />
+      <Label layoutX="290.0" layoutY="31.0" text="名（英文）" />
+      <TextField fx:id="UserNameEn" layoutX="363.0" layoutY="26.0" />
+      <Label layoutX="558.0" layoutY="32.0" text="生日" />
+      <TextField fx:id="birthday" layoutX="594.0" layoutY="26.0" promptText="1990121" />
+      <Label layoutX="774.0" layoutY="31.0" text="手机号码" />
+      <TextField fx:id="phone" layoutX="835.0" layoutY="26.0" />
+      <Label layoutX="61.0" layoutY="64.0" text="qq" />
+      <TextField fx:id="qq" layoutX="104.0" layoutY="63.0" />
+      <TextField fx:id="idcard" layoutX="363.0" layoutY="59.0" promptText="身份证后六位" />
+      <Label layoutX="310.0" layoutY="68.0" text="身份证" />
+      <Label layoutX="39.0" layoutY="103.0" text="公司名" />
+      <TextField fx:id="wife" layoutX="594.0" layoutY="59.0" />
+      <Label layoutX="774.0" layoutY="63.0" text="子女姓名" />
+      <TextField fx:id="babyName" layoutX="835.0" layoutY="58.0" />
+      <TextField fx:id="company" layoutX="103.0" layoutY="98.0" />
+      <Label layoutX="535.0" layoutY="66.0" text="配偶姓名" />
+      <TextField fx:id="workNumber" layoutX="363.0" layoutY="98.0" />
+      <Label layoutX="322.0" layoutY="103.0" text="工号" />
+      <Label layoutX="558.0" layoutY="103.0" text="域名" />
+      <TextField fx:id="domain" layoutX="595.0" layoutY="93.0" />
+      <Label layoutX="786.0" layoutY="98.0" text="系统名" />
+      <TextField fx:id="systemName" layoutX="835.0" layoutY="90.0" />
+      <Label layoutX="90.0" layoutY="137.0" text="常用词组" />
+      <TextArea fx:id="Commonphrases" layoutX="40.0" layoutY="155.0" prefHeight="140.0" prefWidth="200.0" text="!@#&#10;456&#10;lost&#10;1234&#10;QAZ&#10;wsx&#10;qwer&#10;edc&#10;qazwsx&#10;dding&#10;company" />
+      <Label layoutX="363.0" layoutY="137.0" text="连接符" />
+      <TextArea fx:id="Linkkey" layoutX="293.0" layoutY="155.0" prefHeight="140.0" prefWidth="200.0" text="!&#10;@&#10;#&#10;$&#10;%&#10;^&#10;&amp;&#10;*&#10;(&#10;)&#10;_&#10;+&#10;~&#10;=&#10;-" />
+      <Label layoutX="639.0" layoutY="137.0" text="年份" />
+      <TextArea fx:id="year" layoutX="552.0" layoutY="154.0" prefHeight="140.0" prefWidth="200.0" text="2024&#10;2023&#10;2022&#10;2021&#10;2020&#10;2019&#10;2018&#10;2017&#10;2016&#10;2015&#10;2014&#10;2013&#10;2012&#10;2011&#10;2010&#10;2009&#10;2008&#10;2007&#10;2006&#10;2005&#10;2004&#10;2003&#10;2002&#10;2001&#10;2000&#10;1999&#10;1998&#10;1997&#10;1996" wrapText="true" />
+      <TabPane layoutX="19.0" layoutY="302.0">
+         <tabs>
+            <Tab closable="false" text="密码规则">
+               <content>
+                  <AnchorPane layoutX="19.0" layoutY="302.0" minHeight="0.0" minWidth="0.0" prefHeight="267.0" prefWidth="996.0">
+                     <children>
+                        <Label layoutX="229.0" layoutY="94.0" text="+" textFill="#12b7e1">
+                           <font>
+                              <Font size="38.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="477.0" layoutY="93.0" text="+" textFill="#12b7e1">
+                           <font>
+                              <Font size="38.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane fx:id="gz3scroll" layoutX="505.0" layoutY="13.0" prefHeight="236.0" prefViewportHeight="264.0" prefViewportWidth="211.0" prefWidth="213.0">
+                           <content>
+                              <VBox fx:id="gz3" layoutX="290.0" layoutY="10.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="237.0" prefWidth="211.0" snapToPixel="false" spacing="3.0">
+                                 <children>
+                                    <CheckBox mnemonicParsing="true" text="姓（英文）" />
+                                    <CheckBox mnemonicParsing="false" text="名（英文）" />
+                                    <CheckBox mnemonicParsing="false" text="生日" />
+                                    <CheckBox mnemonicParsing="false" text="手机号码" />
+                                    <CheckBox mnemonicParsing="false" text="qq" />
+                                    <CheckBox mnemonicParsing="false" text="身份证后6位" />
+                                    <CheckBox mnemonicParsing="false" text="配偶姓名" />
+                                    <CheckBox mnemonicParsing="false" text="子女姓名" />
+                                    <CheckBox mnemonicParsing="false" text="公司名称" />
+                                    <CheckBox mnemonicParsing="false" text="工号" />
+                                    <CheckBox mnemonicParsing="false" text="域名" />
+                                    <CheckBox mnemonicParsing="false" text="系统名" />
+                                    <CheckBox mnemonicParsing="false" text="连接符" />
+                                    <CheckBox mnemonicParsing="false" text="常用词组" />
+                                    <CheckBox mnemonicParsing="false" text="年份" />
+                                    <CheckBox mnemonicParsing="false" text="曾用账号" />
+                                 </children>
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                                 <padding>
+                                    <Insets bottom="2.0" left="5.0" right="2.0" top="2.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane fx:id="gz1scroll" layoutX="14.0" layoutY="10.0" prefHeight="241.0" prefViewportHeight="264.0" prefViewportWidth="211.0" prefWidth="213.0">
+                           <content>
+                              <VBox fx:id="gz1" layoutX="14.0" layoutY="10.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="247.0" prefWidth="209.0" snapToPixel="false" spacing="3.0">
+                                 <children>
+                                    <CheckBox mnemonicParsing="true" text="姓（英文）" />
+                                    <CheckBox mnemonicParsing="false" text="名（英文）" />
+                                    <CheckBox mnemonicParsing="false" text="生日" />
+                                    <CheckBox mnemonicParsing="false" text="手机号码" />
+                                    <CheckBox mnemonicParsing="false" text="qq" />
+                                    <CheckBox mnemonicParsing="false" text="身份证后6位" />
+                                    <CheckBox mnemonicParsing="false" text="配偶姓名" />
+                                    <CheckBox mnemonicParsing="false" text="子女姓名" />
+                                    <CheckBox mnemonicParsing="false" text="公司名称" />
+                                    <CheckBox mnemonicParsing="false" text="工号" />
+                                    <CheckBox mnemonicParsing="false" text="域名" />
+                                    <CheckBox mnemonicParsing="false" text="系统名" />
+                                    <CheckBox mnemonicParsing="false" text="连接符" />
+                                    <CheckBox mnemonicParsing="false" text="常用词组" />
+                                    <CheckBox mnemonicParsing="false" text="年份" />
+                                    <CheckBox mnemonicParsing="false" text="曾用账号" />
+                                 </children>
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                                 <padding>
+                                    <Insets bottom="2.0" left="6.0" right="2.0" top="2.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane layoutX="260.0" layoutY="10.0" prefHeight="241.0" prefViewportHeight="264.0" prefViewportWidth="211.0" prefWidth="213.0">
+                           <content>
+                              <VBox fx:id="gz2" layoutX="14.0" layoutY="10.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="234.0" prefWidth="211.0" snapToPixel="false" spacing="3.0">
+                                 <children>
+                                    <CheckBox mnemonicParsing="false" text="常用词组" />
+                                    <CheckBox mnemonicParsing="false" text="连接符" />
+                                 </children>
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                                 <padding>
+                                    <Insets bottom="2.0" left="5.0" right="2.0" top="2.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                        <TextField fx:id="dictlenStart" layoutX="832.0" layoutY="214.0" prefHeight="27.0" prefWidth="46.0" text="6" />
+                        <TextField fx:id="dictlenEnd" layoutX="915.0" layoutY="214.0" prefHeight="27.0" prefWidth="46.0" text="12" />
+                        <Label layoutX="742.0" layoutY="219.0" text="密码长度：" />
+                        <Label layoutX="893.0" layoutY="219.0" text="-" />
+                        <Label layoutX="733.0" layoutY="51.0" prefHeight="112.0" prefWidth="245.0" text="    工具根据您从左边3个选择项中选择的信息自动组合生成密码字典，一次性选择太多选项将会影响生成速度，请谨慎选择。" wrapText="true" />
+                        <Label layoutX="786.0" layoutY="33.0" text="温馨提示" textFill="#d71a1a">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="739.0" layoutY="134.0" prefHeight="78.0" prefWidth="240.0" text="    生成密码会根据下面设定的密码长度限制输出，请根据实际情况调整密码长度限！" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Label layoutX="874.0" layoutY="137.0" text="曾用账号" />
+      <Button fx:id="initText" layoutX="835.0" layoutY="607.0" onAction="#oninitTextClick" prefHeight="27.0" prefWidth="95.0" text="信息重置" />
+      <TextArea fx:id="oldAccount" layoutX="800.0" layoutY="154.0" prefHeight="140.0" prefWidth="200.0" />
+      <Button layoutX="711.0" layoutY="607.0" onAction="#onClearDictClick" prefHeight="27.0" prefWidth="95.0" text="清空" />
+       <Button layoutX="593.0" layoutY="607.0" onAction="#onHelloButtonClick" prefHeight="27.0" prefWidth="95.0" text="生成字典" />
+      <Label fx:id="status" layoutX="21.0" layoutY="607.0" prefHeight="27.0" prefWidth="233.0" />
+      <Button fx:id="SaveDict" layoutX="945.0" layoutY="607.0" mnemonicParsing="false" onAction="#onSaveDictClick" text="保存字典" />
+   </children>
+</AnchorPane>
