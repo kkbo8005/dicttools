@@ -4,8 +4,9 @@ target/
 !**/src/test/**/target/
 
 
-### IntelliJ IDEA ###
-.idea
+
+### IntelliJ /IDEA ###
+.idea/
 .idea/modules.xml
 .idea/jarRepositories.xml
 .idea/compiler.xml
@@ -33,8 +34,12 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+.mvn/
+
 ### VS Code ###
 .vscode/
 
 ### Mac OS ###
-.DS_Store
+.DS_Storeß
+
+.gitignore
