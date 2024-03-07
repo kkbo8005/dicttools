@@ -39,7 +39,7 @@
       <Label layoutX="786.0" layoutY="98.0" text="系统名" />
       <TextField fx:id="systemName" layoutX="835.0" layoutY="90.0" />
       <Label layoutX="90.0" layoutY="137.0" text="常用词组" />
-      <TextArea fx:id="Commonphrases" layoutX="40.0" layoutY="155.0" prefHeight="140.0" prefWidth="200.0" text="!@#&#10;456&#10;lost&#10;1234&#10;QAZ&#10;wsx&#10;qwer&#10;edc&#10;qazwsx&#10;dding&#10;company" />
+      <TextArea fx:id="Commonphrases" layoutX="40.0" layoutY="155.0" prefHeight="140.0" prefWidth="200.0" text="!@#&#10;456&#10;lost&#10;1234&#10;QAZ&#10;wsx&#10;qwer&#10;edc&#10;qazwsx&#10;dding&#10;company&#10;china&#10;&#10;1." />
       <Label layoutX="363.0" layoutY="137.0" text="连接符" />
       <TextArea fx:id="Linkkey" layoutX="293.0" layoutY="155.0" prefHeight="140.0" prefWidth="200.0" text="!&#10;@&#10;#&#10;$&#10;%&#10;^&#10;&amp;&#10;*&#10;(&#10;)&#10;_&#10;+&#10;~&#10;=&#10;-" />
       <Label layoutX="639.0" layoutY="137.0" text="年份" />
@@ -140,6 +140,12 @@
                                  <children>
                                     <CheckBox mnemonicParsing="false" text="常用词组" />
                                     <CheckBox mnemonicParsing="false" text="连接符" />
+                                    <CheckBox mnemonicParsing="false" text="年份" />
+                                    <CheckBox mnemonicParsing="false" text="曾用账号" />
+                                    <CheckBox mnemonicParsing="false" text="工号" />
+                                    <CheckBox mnemonicParsing="false" text="手机号码" />
+                                    <CheckBox mnemonicParsing="false" text="qq" />
+                                    <CheckBox mnemonicParsing="false" text="身份证后6位" />
                                  </children>
                                  <effect>
                                     <Lighting>
@@ -175,7 +181,7 @@
          </tabs>
       </TabPane>
       <Label layoutX="874.0" layoutY="137.0" text="曾用账号" />
-      <Button fx:id="initText" layoutX="835.0" layoutY="607.0" onAction="#oninitTextClick" prefHeight="27.0" prefWidth="95.0" text="信息重置" />
+      <Button fx:id="initText" layoutX="831.0" layoutY="607.0" onAction="#oninitTextClick" prefHeight="27.0" prefWidth="95.0" text="信息重置" />
       <TextArea fx:id="oldAccount" layoutX="800.0" layoutY="154.0" prefHeight="140.0" prefWidth="200.0" />
       <Button layoutX="711.0" layoutY="607.0" onAction="#onClearDictClick" prefHeight="27.0" prefWidth="95.0" text="清空" />
        <Button layoutX="593.0" layoutY="607.0" onAction="#onHelloButtonClick" prefHeight="27.0" prefWidth="95.0" text="生成字典" />
