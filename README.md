@@ -39,3 +39,5 @@ java -jar dicttools-1.0-SNAPSHOT.jar
 更多完善建议和技术交流可以加v:**kkbo680** ，谢谢。
 
 ![image-20240406180609618](README.assets/image-20240406180609618.png)
+
+![image-20240421230001329](README.assets/image-20240421230001329.png)
